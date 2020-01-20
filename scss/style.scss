@@ -1,0 +1,10 @@
+$color-main: green;
+$color-second: white;
+
+body{
+    background-color: $color-main;
+}
+
+h1{
+    color: $color-second;
+}
