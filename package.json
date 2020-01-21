@@ -19,6 +19,10 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-stylelint": "^11.0.0",
+    "stylelint": "^13.0.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^19.0.0"
   }
 }
