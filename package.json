@@ -24,5 +24,8 @@
     "stylelint": "^13.0.0",
     "stylelint-config-recess-order": "^2.0.3",
     "stylelint-config-standard": "^19.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
   }
 }

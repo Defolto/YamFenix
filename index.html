@@ -1,14 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello world!</h1>
-    <h2>Hello1</h2>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light px-5 py-2">
+        <a class="navbar-brand" href="#">ЯмФеникс</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <p>
+                    <img src="img/phone.png" alt="телефон" width='30px' height="30px">
+                    78-98-26, 8-920-103-76-74
+                </p>
+
+                <p>
+                    <img src="img/email.png" alt="почта" width='30px' height="30px">
+                    yam.fenix@yandex.ru
+                </p>
+            </span>
+        </div>
+    </nav>
+    <header>
+        <div class="container-fluid mainSection">
+            <div class="row">
+                <div class="col-md-7 px-5">
+                    <h1>Похоронный дом<br>«Феникс»</h1>
+                    <p class="mainSection__text">Достойная организация похорон, которую обеспечивает наша ритуальная служба, всегда доступна любым социальным группам в Гаврилов Ям. Для этого похоронный дом ЯмФеникс сохраняет минимальные цены своих товаров и услуг.</p> 
+                    <p class="mainSection__text">Доверенная нашему агентству организация похорон в Ярославле проводится добросовестными и отзывчивыми сотрудниками, которые уважают память покойных и бережно относятся к скорбящим родственникам.</p>
+                    <div class="row justify-content-between mainSection__service">
+                        <div class="col-md-3">
+                            <img src="img/transport.jpg" alt="Эвакуация и перевозка">
+                            <p class="textService">Эвакуация и перевозка</p>
+                            <a href="#service1"></a>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/organization.jpg" alt="Организация похорон">
+                            <p class="textService">Организация похорон</p>
+                            <a href="#service2"></a>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/goodPlace.jpeg" alt="Благоустройство захоронений">
+                            <p class="textService">Благоустройство захоронений</p>
+                            <a href="#service3"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- TODO: сделать секцию "о нас" -->
+        <section class="container-fluid">
+            <div class="row">
+                
+            </div>
+        </section>
+
+        <section class="container-fluid serviceSection">
+            <div class="row service1">
+                <h2 class="titleSection">Услуги</h2>
+            </div>
+            <div class="row service1" id="service1">
+                <div class="col-md-5">
+                    <img src="img/Service1.png" width="100%" alt="ритуальные перевозки">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="text-center pt-4 subtitleService">Эвакуация и перевозка тела</h3>
+                    <ul>
+                        <li>Выезд ритуального агента на адрес КРУГЛОСУТОЧНО, БЕСПЛАТНО</li>
+                        <li>Эвакуация тела в морг  КРУГЛОСУТОЧНО, БЕСПЛАТНО</li>
+                        <li>Автоктафалк(перевозка тел по ЯО и в другие регионы)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row service2" id="service2">
+                <div class="col-md-7">
+                    <h3 class="text-center pt-4 subtitleService">Организации похорон</h3>
+                    <ul>
+                        <li>Оформление документов для захоронения БЕСПЛАТНО</li>
+                        <li>Помощь в выборе ритуальных товаров БЕСПЛАТНО</li>
+                        <li>Услуги распорядителя похорон</li>
+                        <li>Услуги похоронной бригады по переносу тела</li>
+                        <li>Организация прощания с умершим, (зал для прощания,очное и заочное отпевание)</li>
+                        <li>Организация поминок</li>
+                        <li>Помощь в оформлении места для захоронения БЕСПЛАТНО</li>
+                        <li>Оформление прижизненного договора на ритуальное обслуживание</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 px-0">
+                    <img src="img/Service2.jpg" width="100%" alt="организация похорон">
+                </div>
+            </div>
+            <div class="row service1" id="service3">
+                <div class="col-md-5 px-0">
+                    <img src="img/service3.jpeg" width="100%" alt="благоустройство захоронений">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="text-center pt-4 subtitleService">Услуги по благоустройству захоронений</h3>
+                    <ul>
+                        <li>Изготовление и установка памятников, оград</li>
+                        <li>Благоустройство захоронений, уход за могилами(покраска оград, покос травы)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="jquery-1.11.0.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/navigationPadding.js"></script>
 </body>
 </html>

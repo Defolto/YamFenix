@@ -1,10 +1,165 @@
-$color-main: green;
-$color-second: white;
-
-body{
-    background-color: $color-main;
+// main style
+p{
+    margin: 0;
 }
 
-h1{
-    color: $color-second;
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+
+.titleSection{
+    padding: 0 40px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    font-family: 'PT Serif', serif;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 4px;
+    border-bottom: 1px solid #fff;
+}
+
+// navigation panel
+
+.navbar{
+    background-color: #ffffffea;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+
+.navbar-brand{
+    padding-right: 40px;
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Open+Sans&display=swap');
+
+.nav-link{
+    padding-top: 20px;
+    margin: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: black !important;
+}
+
+.navbar-text{
+    padding: 0;
+
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: black;
+
+        img{
+            margin-right: 5px;
+        }
+    }
+
+    p:last-child{
+        margin-top: 10px;
+    }
+}
+
+// header
+
+header{
+    min-height: 100vh;
+    background: url('../img/mainFon.jpg');
+    background-size: cover;
+}
+
+.mainSection{
+    h1{
+        font-family: 'PT Serif', serif;
+        font-size: 70px;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    .mainSection__text{
+        margin-bottom: 15px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 17px;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    &__service{
+        padding: 20px;
+
+        div{
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 0 5px 0 rgba(248, 248, 248, .75);
+            transition: .6s;
+            cursor: pointer;
+
+            &:hover{
+                box-shadow: 0 0 15px 0 rgba(248, 248, 248, .75);
+            }
+
+            .textService{
+                padding-top: 7px;
+                color: black;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            a{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// header
+
+// main (sections)
+
+.serviceSection{
+    .subtitleService{
+        font-size: 40px;
+        color: white;
+    }
+
+    ul{
+        margin: 30px 0;
+
+        li{
+            padding: 3px 0;
+            font-size: 20px;
+            color: white;
+            list-style: none;
+
+            &::before{
+                content: '— ';
+            }
+        }
+    }
+
+    .row:first-child{
+        justify-content: center;
+    }
+
+    .service1{
+        background-color: #131313;
+    }
+
+    .service2{
+        background-color: #1b1b1b;
+    }
 }

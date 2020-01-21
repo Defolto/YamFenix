@@ -2,6 +2,7 @@
     "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
     "rules":{
         "indentation": 4,
-        "block-opening-brace-space-before": "never"
+        "block-opening-brace-space-before": "never",
+        "number-leading-zero": "never"
     }
 }
