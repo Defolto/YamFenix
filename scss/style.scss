@@ -17,14 +17,26 @@ body{
     font-family: 'PT Serif', serif;
     font-size: 50px;
     color: white;
+    text-align: center;
     letter-spacing: 4px;
     border-bottom: 1px solid #fff;
+
+    @media (max-width: 600px){
+        padding: 0 10px;
+        padding-bottom: 8px;
+        font-size: 39px;
+    }
 }
 
 // navigation panel
 
 .navbar{
     background-color: #ffffffea;
+
+    @media (max-width: 360px){
+        padding: 10px 40px !important;
+        padding-right: 10px !important;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
@@ -35,6 +47,11 @@ body{
     font-size: 30px;
     font-weight: 800;
     letter-spacing: 2px;
+    transition: .6s;
+
+    @media (max-width: 360px){
+        padding-right: 0;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Open+Sans&display=swap');
@@ -65,6 +82,26 @@ body{
     }
 }
 
+.navbarMini{
+    padding: 5px 38px;
+
+    a{
+        padding-right: 10px;
+        font-size: 20px;
+    }
+
+    .nav-link{
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    .navbar-text{
+        p:last-child{
+            display: none;
+        }
+    }
+}
+
 // header
 
 header{
@@ -80,6 +117,17 @@ header{
         color: white;
         text-align: center;
         letter-spacing: 3px;
+
+        @media (max-width: 600px){
+            font-size: 30px;
+        }
+    }
+
+    .row div{
+        @media (max-width: 600px){
+            padding-right: 15px !important;
+            padding-left: 15px !important;
+        }
     }
 
     .mainSection__text{
@@ -89,25 +137,51 @@ header{
         color: white;
         letter-spacing: 1px;
     }
+}
+
+// header
+
+// main (sections)
+
+.serviceIcon{
+    box-sizing: border-box;
+    padding: 20px 0 50px;
+    background: url('../img/serviceFon.jpg');
 
     &__service{
-        padding: 20px;
+        @media (max-width: 760px){
+            justify-content: center !important;
+        }
 
         div{
+            display: flex;
+            flex-direction: column;
             width: 100%;
             padding: 0;
             text-align: center;
+            cursor: pointer;
             background-color: white;
             box-shadow: 0 0 5px 0 rgba(248, 248, 248, .75);
             transition: .6s;
-            cursor: pointer;
+
+            @media (max-width: 1190px){
+                width: 40%;
+                margin: 15px;
+            }
+
+            @media (max-width: 760px){
+                width: 70%;
+                margin: 15px 0;
+            }
 
             &:hover{
                 box-shadow: 0 0 15px 0 rgba(248, 248, 248, .75);
             }
 
             .textService{
-                padding-top: 7px;
+                padding: 15px;
+                margin: auto;
+                font-size: 24px;
                 color: black;
             }
 
@@ -126,18 +200,26 @@ header{
     }
 }
 
-// header
-
-// main (sections)
+.aboutUs{
+    background-color: blanchedalmond;
+}
 
 .serviceSection{
     .subtitleService{
         font-size: 40px;
         color: white;
+
+        @media (max-width: 350px){
+            font-size: 30px;
+        }
     }
 
     ul{
         margin: 30px 0;
+
+        @media (max-width: 770px) {
+            padding: 0;
+        }
 
         li{
             padding: 3px 0;
@@ -164,6 +246,9 @@ header{
     }
 }
 
+// main (sections)
+
+// footer
 .footerMap{
     position: relative;
     z-index: 2;
@@ -178,11 +263,21 @@ header{
         padding: 25px;
         background-color: rgba(12, 12, 12, .808);
 
+        @media (max-width: 600px){
+            padding: 0;
+        }
+
         h4{
             margin: 0 auto;
             font-size: 40px;
             color: white;
             letter-spacing: 2px;
+
+            @media (max-width: 600px){
+                padding-top: 10px;
+                font-size: 20px;
+                letter-spacing: 0;
+            }
         }
 
         &__contact{
@@ -190,6 +285,10 @@ header{
 
             div{
                 text-align: center;
+
+                @media (max-width: 600px){
+                    padding: 0;
+                }
 
                 p{
                     font-size: 20px;
