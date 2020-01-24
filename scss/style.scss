@@ -158,9 +158,12 @@ header{
             flex-direction: column;
             width: 100%;
             padding: 0;
+            margin: 0 40px;
+            overflow: hidden;
             text-align: center;
             cursor: pointer;
             background-color: white;
+            border-radius: 25px;
             box-shadow: 0 0 5px 0 rgba(248, 248, 248, .75);
             transition: .6s;
 
@@ -175,18 +178,20 @@ header{
             }
 
             &:hover{
-                box-shadow: 0 0 15px 0 rgba(248, 248, 248, .75);
+                box-shadow: 0 0 20px 0 rgba(248, 248, 248, .75);
             }
 
             .textService{
-                padding: 15px;
+                padding: 10px;
                 margin: auto;
                 font-size: 24px;
+                font-weight: 500;
                 color: black;
             }
 
             img{
                 width: 100%;
+                box-shadow: 0 2px 2px 1px rgba(0, 0, 0, .75);
             }
 
             a{
@@ -201,7 +206,48 @@ header{
 }
 
 .aboutUs{
-    background-color: blanchedalmond;
+    background: url('../img/fonAboutUs.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.info-AboutUs{
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        display: inline-block;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    p{
+        margin-bottom: 20px;
+        font-size: 19px;
+        color: white;
+    }
+
+    h4{
+        padding-top: 15px;
+        padding-bottom: 7px;
+        font-size: 32px;
+        font-weight: 700;
+        color: white;
+    }
+
+    ul{
+        padding-left: 20px;
+        list-style: none;
+
+        li{
+            font-size: 19px;
+            color: white;
+
+            &::before{
+                content: '— ';
+            }
+        }
+    }
 }
 
 .serviceSection{
