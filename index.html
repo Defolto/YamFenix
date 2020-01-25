@@ -15,21 +15,15 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">О нас</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Услуги</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
-                </li>
+            <ul class="navbar-nav mr-auto" id="menu">
+                <a class="nav-link" href="#AboutUs" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">О нас</a>
+                <a class="nav-link" href="#serviceInfo" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">Услуги</a>
+                <a class="nav-link" href="#contact" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">Контакты</a>
             </ul>
             <span class="navbar-text">
                 <p>
                     <img src="img/phone.png" alt="телефон" width='30px' height="30px">
-                    78-98-26, 8-920-103-76-74
+                    <span>78-98-26</span>, <br class="brLine"> <span>8-920-103-76-74</span>
                 </p>
 
                 <p>
@@ -46,14 +40,20 @@
                     <h1>Похоронный дом<br>«Феникс»</h1>
                     <p class="mainSection__text">Похоронный дом "Феникс" создан для улучшения качества предоставляемых ритуальных услуг в городе Гаврилов-Ям.</p> 
                     <p class="mainSection__text">Доверяя нам организацию похорон  Вы получаете высокий сервис,обеспеченный добросовестными и отзывчивыми сотрудниками, которые уважают память покойных и бережно относятся к скорбящим родственникам.</p>
-                    <p class="mainSection__text">НАМ ВЫ МОЖЕТЕ ДОВЕРЯТЬ!</p> 
+                    <p class="mainSection__text">Наш похоронный дом первый и единственный в городе, который готов предоставить такие услуги как:</p>
+                    <ul>
+                        <li class="mainSection__text">Кремация усопшего</li>
+                        <li class="mainSection__text">Полная подготовка и получение всех необходимых документов</li>
+                        <li class="mainSection__text">Доставка "груза 200" из любой точки мира</li>
+                    </ul>
+                    <p class="mainSection__title">НАМ ВЫ МОЖЕТЕ ДОВЕРЯТЬ!</p> 
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="container-fluid serviceIcon">
+        <section class="container-fluid serviceIcon" id="menu1">
             <div class="row justify-content-center m-0 p-0">
                 <h2 class="titleSection">Наши услуги</h2>
             </div>
@@ -61,48 +61,48 @@
                 <div class="col-xl-2">
                     <img src="img/creamation.jpg" alt="Организация похорон">
                     <p class="textService">Кремация</p>
-                    <a href="#service4"></a>
+                    <a href="#service7"></a>
                 </div>
                 <div class="col-xl-2">
                     <img src="img/200.jpg" alt="Груз 200">
                     <p class="textService">Груз 200</p>
-                    <a href="#service2"></a>
+                    <a href="#service1"></a>
                 </div>
                 <div class="col-xl-2">
                     <img src="img/transport.jpg" alt="Эвакуация и перевозка">
                     <p class="textService">Эвакуация и перевозка</p>
-                    <a href="#service1"></a>
+                    <a href="#service4"></a>
                 </div>
                 <div class="col-xl-2">
                     <img src="img/organization.jpg" alt="Организация похорон">
                     <p class="textService">Организация похорон</p>
-                    <a href="#service2"></a>
+                    <a href="#service5"></a>
                 </div>
             </div>
             <div class="row justify-content-center serviceIcon__service m-0 p-4">
                 <div class="col-xl-2">
                     <img src="img/document.jpg" alt="Благоустройство захоронений">
                     <p class="textService">Подготовка документов</p>
-                    <a href="#service5"></a>
+                    <a href="#service8"></a>
                 </div>
                 <div class="col-xl-2">
                     <img src="img/goodPlace.jpeg" alt="Благоустройство захоронений">
                     <p class="textService">Благоустройство захоронений</p>
-                    <a href="#service3"></a>
+                    <a href="#service8"></a>
                 </div>
                 <div class="col-xl-2">
                     <img src="img/social.jpg" alt="Социальные похороны">
                     <p class="textService">Социальные похороны</p>
-                    <a href="#service3"></a>
+                    <a href="#service2"></a>
                 </div>
                 <div class="col-xl-2">
                     <img src="img/kopka-mogil.jpg" alt="Копка могил">
                     <p class="textService">Копка могил</p>
-                    <a href="#service4"></a>
+                    <a href="#service3"></a>
                 </div>
             </div>
         </section>
-        <section class="container-fluid aboutUs">
+        <section class="container-fluid aboutUs" id="AboutUs">
             <div class="row">
                 <div class="offset-6 col-md-6 info-AboutUs">
                     <h2 class="titleSection text-center">О нас</h2>
@@ -124,11 +124,52 @@
             </div>
         </section>
 
-        <section class="container-fluid serviceSection">
-            <div class="row service1">
-                <h2 class="titleSection text-center">Услуги</h2>
+        <section class="container-fluid serviceSection" id="serviceInfo">
+            <div class="row service2">
+                <h2 class="titleSection text-center mb-4">Услуги</h2>
             </div>
-            <div class="row service1" id="service1">
+            <div class="row service2" id="service1">
+                <div class="col-md-7">
+                    <h3 class="text-center pt-4 subtitleService">Груз 200</h3>
+                    <ul>
+                        <li>Перевозим "груз 200" из любого города, даже из-за границы</li>
+                        <li>Берём все хлопоты по перевозке тела и сопровождающих лиц</li>
+                        <li>Полная подготовка с юридической стороны</li>
+                        <li>Возможность сопровождения на всех этапах следования</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 px-0">
+                    <img src="img/service1.jpg" width="100%" alt="организация похорон">
+                </div>
+            </div>
+            <div class="row service1" id="service8">
+                <div class="col-md-5 px-0">
+                    <img src="img/service5.jpg" width="100%" alt="благоустройство захоронений">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="text-center pt-4 subtitleService">Подготовка документов</h3>
+                    <ul>
+                        <li>Медицинского свидетельства о смерти</li>
+                        <li>Гербового свидетельства о смерти</li>
+                        <li>Справки для получения пособия на погребения</li>
+                        <li>Разрешения на захоронение (подхоронение)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row service2" id="service7">
+                <div class="col-md-7">
+                    <h3 class="text-center pt-4 subtitleService">Кремация</h3>
+                    <ul>
+                        <li>Доставка гроба с телом усопшего в крематорий (важно, чтобы гроб и другие траурные атрибуты были выбраны правильно)</li>
+                        <li>Установка гроба на катафалк в ритуальном зале крематория</li>
+                        <li>Церемония прощания</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 px-0">
+                    <img src="img/service4.jpg" width="100%" alt="организация похорон">
+                </div>
+            </div>
+            <div class="row service1" id="service4">
                 <div class="col-md-5 px-0">
                     <img src="img/Service1.png" width="100%" alt="ритуальные перевозки">
                 </div>
@@ -141,7 +182,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row service2" id="service2">
+            <div class="row service2" id="service5">
                 <div class="col-md-7">
                     <h3 class="text-center pt-4 subtitleService">Организации похорон</h3>
                     <ul>
@@ -159,7 +200,7 @@
                     <img src="img/service2.jpg" width="100%" alt="организация похорон">
                 </div>
             </div>
-            <div class="row service1" id="service3">
+            <div class="row service1" id="service6">
                 <div class="col-md-5 px-0">
                     <img src="img/service3.jpeg" width="100%" alt="благоустройство захоронений">
                 </div>
@@ -171,40 +212,37 @@
                     </ul>
                 </div>
             </div>
-            <div class="row service2" id="service2">
+            <div class="row service2" id="service3">
                 <div class="col-md-7">
-                    <h3 class="text-center pt-4 subtitleService">Кремация</h3>
+                    <h3 class="text-center pt-4 subtitleService">Копка могилы</h3>
                     <ul>
-                        <li>Оформление документов для захоронения БЕСПЛАТНО</li>
-                        <li>Помощь в выборе ритуальных товаров БЕСПЛАТНО</li>
-                        <li>Услуги распорядителя похорон</li>
-                        <li>Услуги похоронной бригады по переносу тела</li>
-                        <li>Организация прощания с умершим, (зал для прощания,очное и заочное отпевание)</li>
-                        <li>Организация поминок</li>
-                        <li>Помощь в оформлении места для захоронения БЕСПЛАТНО</li>
-                        <li>Оформление прижизненного договора на ритуальное обслуживание</li>
+                        <li>Работа погребальной бригады</li>
+                        <li>Яма под размеры гроба</li>
+                        <li>Помощь в оформлении места для захоронения</li>
                     </ul>
                 </div>
                 <div class="col-md-5 px-0">
-                    <img src="img/service4.jpg" width="100%" alt="организация похорон">
+                    <img src="img/service7.jpg" width="100%" alt="организация похорон">
                 </div>
             </div>
-            <div class="row service1" id="service3">
+            <div class="row service1" id="service2">
                 <div class="col-md-5 px-0">
-                    <img src="img/service5.jpg" width="100%" alt="благоустройство захоронений">
+                    <img src="img/service6.jpg" width="100%" alt="ритуальные перевозки">
                 </div>
                 <div class="col-md-7">
-                    <h3 class="text-center pt-4 subtitleService">Подготовка документов</h3>
+                    <h3 class="text-center pt-4 subtitleService">Социальные похороны</h3>
                     <ul>
-                        <li>Изготовление и установка памятников, оград</li>
-                        <li>Благоустройство захоронений, уход за могилами(покраска оград, покос травы)</li>
+                        <li>Предоставление гроба</li>
+                        <li>Транспорт до кладбища</li>
+                        <li>Оформление документов для захоронения</li>
+                        <li>Помощь в оформлении места на кладбище</li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid" id="contact">
         <div class="row">
             <div class="col-md-12 px-0 footerMap">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e72889a456cc01ba8f1d52bef535c53912d0d6bd82fedaacf18525425b3d70c&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
